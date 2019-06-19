@@ -79,17 +79,20 @@
 
 
 
-<meta name="description" content="FAQ hexo server -p 8080 后访问http://localhost:8080不到页面？ scaffolds有什么用？scaffolds是脚手架，或者说是创建posts时使用的模版。当执行了hexo new photo ‘My Gallery’以后，会在scaffolds目录下寻找photo.md作为创建source/_posts/My-Gallery.md的模版。 deploy">
+<meta name="description" content="大概每个cs engineer都有一个blog情怀，要做一个自己的站点。在查找资料的过程中，近期总是有意无意的注意到。   hexo是什么？它能做什么？它有什么特点？快速、简洁且高效的博客框架  超快速度 支持Markdown 一键部署 丰富的插件  用hexo建设blog站点流程万事开头难，把hexo部署到github pages上面对于熟悉github的同学并不难。但是对于第一次接触pages">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用hexo建立博客">
 <meta property="og:url" content="http://hanadumal.com/2019/06/14/使用hexo建立博客/index.html">
 <meta property="og:site_name" content="Hanadumal">
-<meta property="og:description" content="FAQ hexo server -p 8080 后访问http://localhost:8080不到页面？ scaffolds有什么用？scaffolds是脚手架，或者说是创建posts时使用的模版。当执行了hexo new photo ‘My Gallery’以后，会在scaffolds目录下寻找photo.md作为创建source/_posts/My-Gallery.md的模版。 deploy">
+<meta property="og:description" content="大概每个cs engineer都有一个blog情怀，要做一个自己的站点。在查找资料的过程中，近期总是有意无意的注意到。   hexo是什么？它能做什么？它有什么特点？快速、简洁且高效的博客框架  超快速度 支持Markdown 一键部署 丰富的插件  用hexo建设blog站点流程万事开头难，把hexo部署到github pages上面对于熟悉github的同学并不难。但是对于第一次接触pages">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-06-18T13:09:17.038Z">
+<meta property="og:image" content="http://hanadumal.com/2019/06/14/使用hexo建立博客/powered-by-hexo.png">
+<meta property="og:image" content="http://hanadumal.com/2019/06/14/使用hexo建立博客/404.png">
+<meta property="og:updated_time" content="2019-06-19T07:11:41.912Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用hexo建立博客">
-<meta name="twitter:description" content="FAQ hexo server -p 8080 后访问http://localhost:8080不到页面？ scaffolds有什么用？scaffolds是脚手架，或者说是创建posts时使用的模版。当执行了hexo new photo ‘My Gallery’以后，会在scaffolds目录下寻找photo.md作为创建source/_posts/My-Gallery.md的模版。 deploy">
+<meta name="twitter:description" content="大概每个cs engineer都有一个blog情怀，要做一个自己的站点。在查找资料的过程中，近期总是有意无意的注意到。   hexo是什么？它能做什么？它有什么特点？快速、简洁且高效的博客框架  超快速度 支持Markdown 一键部署 丰富的插件  用hexo建设blog站点流程万事开头难，把hexo部署到github pages上面对于熟悉github的同学并不难。但是对于第一次接触pages">
+<meta name="twitter:image" content="http://hanadumal.com/2019/06/14/使用hexo建立博客/powered-by-hexo.png">
 
 
 
@@ -329,11 +332,65 @@
       
 
       
-        <h1 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h1><ol>
-<li>hexo server -p 8080 后访问<a href="http://localhost:8080不到页面？" target="_blank" rel="noopener">http://localhost:8080不到页面？</a></li>
-<li>scaffolds有什么用？<br>scaffolds是脚手架，或者说是创建posts时使用的模版。当执行了hexo new photo ‘My Gallery’以后，会在scaffolds目录下寻找<br>photo.md作为创建source/_posts/My-Gallery.md的模版。</li>
-<li>deploy到github以后，点击文章查看详情，404<br> 本地缓存导致的，本地看到的文件并没有更新。</li>
-<li>绑定域名</li>
+        <p>大概每个cs engineer都有一个blog情怀，要做一个自己的站点。在查找资料的过程中，近期总是有意无意的注意到。</p>
+<img src="/2019/06/14/使用hexo建立博客/powered-by-hexo.png" title="hexo">
+
+<h2 id="hexo是什么？它能做什么？它有什么特点？"><a href="#hexo是什么？它能做什么？它有什么特点？" class="headerlink" title="hexo是什么？它能做什么？它有什么特点？"></a>hexo是什么？它能做什么？它有什么特点？</h2><p>快速、简洁且高效的博客框架</p>
+<ul>
+<li>超快速度</li>
+<li>支持Markdown</li>
+<li>一键部署</li>
+<li>丰富的插件</li>
+</ul>
+<h2 id="用hexo建设blog站点流程"><a href="#用hexo建设blog站点流程" class="headerlink" title="用hexo建设blog站点流程"></a>用hexo建设blog站点流程</h2><p>万事开头难，把hexo部署到github pages上面对于熟悉github的同学并不难。但是对于第一次接触pages，或非cs行业的同学还稍有难度。</p>
+<h3 id="hexo在本地建立站点"><a href="#hexo在本地建立站点" class="headerlink" title="hexo在本地建立站点"></a>hexo在本地建立站点</h3><h3 id="hexo将站点推送github"><a href="#hexo将站点推送github" class="headerlink" title="hexo将站点推送github"></a>hexo将站点推送github</h3><h3 id="hexo绑定自己的域名"><a href="#hexo绑定自己的域名" class="headerlink" title="hexo绑定自己的域名"></a>hexo绑定自己的域名</h3><ol>
+<li>注册自己的域名<br>注册域名需要像域名商的网站商发起购买。在它的网站上筛选到喜欢的域名如果尚未出售就可以直接购买。如果已经售出那么除非你真的志在必得，否则还是推荐换一个。那么我们要在哪个域名商店铺里进行购买呢？类比于网购我们可以去淘宝、京东、拼多多，域名商店也有很多。hanadumal.com我是在namesilo上购买的。我使用过的域名购买有阿里云、godaddy、namesilo。国内的暂且不表了。godaddy这家伙是在是坑，虽然是我买过最多的一家，但是现在已经完全不会考虑从godaddy再买了。首先价格很高，第一年通常会有优惠，但是如果你一次购买大于一年，后面的年费比其他家高很多。举例来说，hanadumal.com我在godaddy上查询，发现购买价格是470+。续费价格更贵，在godaddy一上车购买一年试试水，你会发现第二年快到期续费的时候居然比一开始买两年的第二年价格高很多。隐私保护还要额外收费60元/年。namesilo上我买的第一年6.99到，续费8.99刀/年。即使按照人民币汇率7来简单估算，5年都按照8.99刀，折合人民币也只要315元不到。另外namecheap也可以，价格比namesilo稍微贵一点，但是比godaddy良心的多。namecheap和namesilo都提供免费的隐私保护（永久)。我这里打开namecheap其实比namesilo快很多，感觉商店UI也更亲人。如果不在乎稍微多花钱namecheap也是不错的选择，如果第一关心的要点是性价比，那直接namesilo就对了。<br><code>namesilo支持支付宝付款</code></li>
+</ol>
+<blockquote>
+<p><a href="https://www.namesilo.com/index.php" target="_blank" rel="noopener">https://www.namesilo.com/index.php</a><br><a href="https://zhuanlan.zhihu.com/p/33921436" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/33921436</a></p>
+</blockquote>
+<ol start="2">
+<li>修改域名的DNS解析<br>参照DNS提供商来进行域名的A记录操作。以namesilo为例。<br>a) 创建A记录，来把你的域名指向到以下几个IP</li>
+</ol>
+<ul>
+<li>185.199.108.153</li>
+<li>185.199.109.153</li>
+<li>185.199.110.153</li>
+<li>185.199.111.153</li>
+</ul>
+<p>在namesilo上的操作为：</p>
+<p>b) 等一段时间，我大概等了两个小时才生效。用dig命令来验证你的domain解析。</p>
+<ol start="3">
+<li>设置github仓库的custom domain<blockquote>
+<p><a href="https://help.github.com/en/articles/quick-start-setting-up-a-custom-domain" target="_blank" rel="noopener">https://help.github.com/en/articles/quick-start-setting-up-a-custom-domain</a><br><a href="https://help.github.com/en/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site" target="_blank" rel="noopener">https://help.github.com/en/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site</a><br><a href="https://help.github.com/en/articles/about-supported-custom-domains" target="_blank" rel="noopener">https://help.github.com/en/articles/about-supported-custom-domains</a><br><a href="https://help.github.com/en/articles/setting-up-an-apex-domain" target="_blank" rel="noopener">https://help.github.com/en/articles/setting-up-an-apex-domain</a><br><a href="https://help.github.com/en/articles/setting-up-an-apex-domain-and-www-subdomain" target="_blank" rel="noopener">https://help.github.com/en/articles/setting-up-an-apex-domain-and-www-subdomain</a><br><a href="https://help.github.com/en/articles/custom-domain-redirects-for-github-pages-sites" target="_blank" rel="noopener">https://help.github.com/en/articles/custom-domain-redirects-for-github-pages-sites</a></p>
+</blockquote>
+<img src="/2019/06/14/使用hexo建立博客/404.png" title="Github Pages 404 Error.">
+
+</li>
+</ol>
+<h2 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h2><ol>
+<li><p>hexo server -p 8080 后访问<a href="http://localhost:8080不到页面" target="_blank" rel="noopener">http://localhost:8080不到页面</a>?</p>
+</li>
+<li><p>scaffolds有什么用?<br>scaffolds是脚手架，或者说是创建posts时使用的模版。当执行了hexo new photo ‘My Gallery’以后，会在scaffolds目录下寻找<br>photo.md作为创建source/_posts/My-Gallery.md的模版。</p>
+</li>
+<li><p>deploy到github以后，通过<xxxx>.github.io访问点击进入文章详情，提示404。<br>我遇到过的情况是，浏览器本地缓存导致的，清空缓存或者换个浏览器可以正常访问。部署到github以后，用<xxxx>.github.io来访问一般不会出现问题。</xxxx></xxxx></p>
+</li>
+<li><p>绑定域名DNS解析A记录、CNAME以后，通过新绑定的域名访问，提示404。<br>一个有可能的原因是，project的_config.yml修改了url配置, 修改后重新发布，访问正常。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="attr">http://hanadumal.com</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<ol start="5">
+<li><p>如何在hexo的markdown写作中插入图片?<br>a) 如果图片少可以在<br>b) 如果图片多，或者想比较系统的组织图片，你可以开启hexo项目的post_asset_fold配置。这也是我比较推荐的操作方式，只要一直按照设定的规则来操作，未来图片数量增长起来才不会难以维护。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><a href="https://hexo.io/zh-cn/docs/asset-folders.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/asset-folders.html</a></p>
+</blockquote>
+</li>
+<li><p>在draft中写作的过程中，如何能够在localhost进行查看?</p>
+</li>
 </ol>
 
       
@@ -355,22 +412,6 @@
       
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/06/14/使用github-io/" rel="prev" title="使用github io">
-                使用github io <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
       
 
       
@@ -444,7 +485,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -481,7 +522,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#FAQ"><span class="nav-number">1.</span> <span class="nav-text">FAQ</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo是什么？它能做什么？它有什么特点？"><span class="nav-number">1.</span> <span class="nav-text">hexo是什么？它能做什么？它有什么特点？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用hexo建设blog站点流程"><span class="nav-number">2.</span> <span class="nav-text">用hexo建设blog站点流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo在本地建立站点"><span class="nav-number">2.1.</span> <span class="nav-text">hexo在本地建立站点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo将站点推送github"><span class="nav-number">2.2.</span> <span class="nav-text">hexo将站点推送github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo绑定自己的域名"><span class="nav-number">2.3.</span> <span class="nav-text">hexo绑定自己的域名</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FAQ"><span class="nav-number">3.</span> <span class="nav-text">FAQ</span></a></li></ol></div>
             
 
           </div>
