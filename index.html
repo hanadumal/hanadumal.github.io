@@ -352,6 +352,19 @@
 </ol>
 <h2 id="堆排序的时间复杂度，为什么比快排慢？"><a href="#堆排序的时间复杂度，为什么比快排慢？" class="headerlink" title="堆排序的时间复杂度，为什么比快排慢？"></a>堆排序的时间复杂度，为什么比快排慢？</h2><p>时间复杂度为O(nlog), heapify的时间复杂度为O(logn), 建立堆的复杂度为O(nlogn), 排序的时候需要n-1次循环，所以复杂度O(nlog), 整体复杂度O(nlogn)</p>
 <p>堆排序需要将A[0]与A[n-1]进行交换，将A[0]重新下沉到合适的位置。每次新交换上来的A[0]十分小，能够呆在A[0]不需要交换的概率很低，需要经过多次比较和交换才能到达合适的位置。更好的办法是，每次只有1/2的概率需要移动。堆排序和快排虽然都是O(nlog)的时间复杂度，但是堆排序的常数更大。</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>推荐这个网站上学算法：</p>
+<blockquote>
+<p><a href="https://www.geeksforgeeks.org/heap-sort/" target="_blank" rel="noopener">https://www.geeksforgeeks.org/heap-sort/</a></p>
+</blockquote>
+<blockquote>
+<p><a href="https://blog.csdn.net/linkedin_39403967/article/details/75304241" target="_blank" rel="noopener">https://blog.csdn.net/linkedin_39403967/article/details/75304241</a></p>
+</blockquote>
+<blockquote>
+<p><a href="https://blog.csdn.net/MoreWindows/article/details/6709644" target="_blank" rel="noopener">https://blog.csdn.net/MoreWindows/article/details/6709644</a></p>
+</blockquote>
+<blockquote>
+<p><a href="https://ictar.xyz/2015/12/07/%E4%B9%9D%E5%A4%A7%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%8F%8A%E5%85%B6Python%E5%AE%9E%E7%8E%B0%E4%B9%8B%E5%A0%86%E6%8E%92%E5%BA%8F/" target="_blank" rel="noopener">https://ictar.xyz/2015/12/07/%E4%B9%9D%E5%A4%A7%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%8F%8A%E5%85%B6Python%E5%AE%9E%E7%8E%B0%E4%B9%8B%E5%A0%86%E6%8E%92%E5%BA%8F/</a></p>
+</blockquote>
 
           
         
