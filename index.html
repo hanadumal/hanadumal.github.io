@@ -262,6 +262,133 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://hanadumal.com/2019/07/02/Search-Binary/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wang Sheng">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hanadumal">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/02/Search-Binary/" itemprop="url">Search Binary</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-02T19:43:00+08:00">
+                2019-07-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>在一个有序的数组中,下标为l~r的区间内，查找value等于x的值出现的下标。<br>函数头定义为<br>    def binary_search(arr, l, r, x)：</p>
+<p>结束条件为：如果找到则返回下标，如果没有找到返回-1</p>
+<ol>
+<li>获取l~r区间的中间位置下标mid，比较arr[mid]与x</li>
+<li>如果arr[mid]大于x,则说明x只可能出现在左半边区间中</li>
+<li>如果arr[mid]小于x,则说明x只可能出现在右半边区间中</li>
+<li>在待查找子区间中继续步骤1～4</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://hanadumal.com/2019/07/02/Sort-Quick/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -873,7 +1000,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -886,7 +1013,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>

@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="algorithm,search,">
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="The ideal is beauty, and sorrow is the nostalgia for beauty.">
+<meta name="description" content="思路在一个有序的数组中,下标为l~r的区间内，查找value等于x的值出现的下标。函数头定义为    def binary_search(arr, l, r, x)： 结束条件为：如果找到则返回下标，如果没有找到返回-1  获取l~r区间的中间位置下标mid，比较arr[mid]与x 如果arr[mid]大于x,则说明x只可能出现在左半边区间中 如果arr[mid]小于x,则说明x只可能出现在右半">
+<meta name="keywords" content="algorithm,search">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Search Binary">
 <meta property="og:url" content="http://hanadumal.com/2019/07/02/Search-Binary/index.html">
 <meta property="og:site_name" content="Hanadumal">
-<meta property="og:description" content="The ideal is beauty, and sorrow is the nostalgia for beauty.">
+<meta property="og:description" content="思路在一个有序的数组中,下标为l~r的区间内，查找value等于x的值出现的下标。函数头定义为    def binary_search(arr, l, r, x)： 结束条件为：如果找到则返回下标，如果没有找到返回-1  获取l~r区间的中间位置下标mid，比较arr[mid]与x 如果arr[mid]大于x,则说明x只可能出现在左半边区间中 如果arr[mid]小于x,则说明x只可能出现在右半">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-07-02T11:43:00.824Z">
+<meta property="og:updated_time" content="2019-07-02T16:02:26.153Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Search Binary">
-<meta name="twitter:description" content="The ideal is beauty, and sorrow is the nostalgia for beauty.">
+<meta name="twitter:description" content="思路在一个有序的数组中,下标为l~r的区间内，查找value等于x的值出现的下标。函数头定义为    def binary_search(arr, l, r, x)： 结束条件为：如果找到则返回下标，如果没有找到返回-1  获取l~r区间的中间位置下标mid，比较arr[mid]与x 如果arr[mid]大于x,则说明x只可能出现在左半边区间中 如果arr[mid]小于x,则说明x只可能出现在右半">
 
 
 
@@ -329,7 +330,15 @@
       
 
       
-        
+        <h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>在一个有序的数组中,下标为l~r的区间内，查找value等于x的值出现的下标。<br>函数头定义为<br>    def binary_search(arr, l, r, x)：</p>
+<p>结束条件为：如果找到则返回下标，如果没有找到返回-1</p>
+<ol>
+<li>获取l~r区间的中间位置下标mid，比较arr[mid]与x</li>
+<li>如果arr[mid]大于x,则说明x只可能出现在左半边区间中</li>
+<li>如果arr[mid]小于x,则说明x只可能出现在右半边区间中</li>
+<li>在待查找子区间中继续步骤1～4</li>
+</ol>
+
       
     </div>
     
@@ -343,6 +352,14 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/algorithm/" rel="tag"># algorithm</a>
+          
+            <a href="/tags/search/" rel="tag"># search</a>
+          
+        </div>
       
 
       
@@ -413,8 +430,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -442,7 +468,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -465,6 +491,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#思路"><span class="nav-number">1.</span> <span class="nav-text">思路</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
