@@ -262,6 +262,267 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://hanadumal.com/2019/07/02/heap-sort/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wang Sheng">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hanadumal">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/02/heap-sort/" itemprop="url">heap_sort</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-02T16:11:53+08:00">
+                2019-07-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="建堆的过程"><a href="#建堆的过程" class="headerlink" title="建堆的过程"></a>建堆的过程</h2><ol>
+<li>当前节点的，左右子节点，分别为2i+1, 2i + 2</li>
+<li>(arr, n, i) arr为输入数组，n为数组大小，i为当前节点的index</li>
+<li>先比较i, 2i + 1节点的大小, 获取largest</li>
+<li>再比较largest和2i + 2节点的大小</li>
+<li>如果largest不等于i, 那么交换largest和i, 并且针对largest节点继续进行heapify</li>
+</ol>
+<h2 id="查找的过程"><a href="#查找的过程" class="headerlink" title="查找的过程"></a>查找的过程</h2><ol>
+<li>从n-1至0], 也就是从底向顶，建立堆。</li>
+<li>i 从n-1到0), 交换0和i的数据，恢复节点0的堆。</li>
+<li>结果为增序</li>
+</ol>
+<h2 id="bin-heap的定义"><a href="#bin-heap的定义" class="headerlink" title="bin heap的定义"></a>bin heap的定义</h2><ol>
+<li>bin heap是一个完全二叉树，或近似完全二叉树</li>
+<li>父节点的value大于（小于)子节点的value</li>
+<li>每个节点的左右子树都是一个二叉堆（因为这条，所以建立堆的时候需要从bottom到top建立)</li>
+</ol>
+<h2 id="堆排序的时间复杂度，为什么比快排慢？"><a href="#堆排序的时间复杂度，为什么比快排慢？" class="headerlink" title="堆排序的时间复杂度，为什么比快排慢？"></a>堆排序的时间复杂度，为什么比快排慢？</h2><p>时间复杂度为O(nlog), heapify的时间复杂度为O(logn), 建立堆的复杂度为O(nlogn), 排序的时候需要n-1次循环，所以复杂度O(nlog), 整体复杂度O(nlogn)</p>
+<p>堆排序需要将A[0]与A[n-1]进行交换，将A[0]重新下沉到合适的位置。每次新交换上来的A[0]十分小，能够呆在A[0]不需要交换的概率很低，需要经过多次比较和交换才能到达合适的位置。更好的办法是，每次只有1/2的概率需要移动。堆排序和快排虽然都是O(nlog)的时间复杂度，但是堆排序的常数更大。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://hanadumal.com/2019/06/20/CDH部署/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wang Sheng">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hanadumal">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/06/20/CDH部署/" itemprop="url">CDH部署</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-06-20T16:14:19+08:00">
+                2019-06-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="下载Cloudera-Manager"><a href="#下载Cloudera-Manager" class="headerlink" title="下载Cloudera Manager"></a>下载Cloudera Manager</h2><blockquote>
+<p><a href="http://archive.cloudera.com/cm5/cm/5/" target="_blank" rel="noopener">http://archive.cloudera.com/cm5/cm/5/</a></p>
+</blockquote>
+<p>EL: Red Hat <strong>E</strong>nterprise <strong>L</strong>inux(EL)<br>EL5是Red Hat 5.x, CentOS 5.x的下载<br>EL6是Red Hat 6.x, CentOS 6.x的下载<br>EL7是Red Hat 7.x, CentOS 7.x的下载</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://hanadumal.com/2019/06/14/使用hexo建立博客/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -480,7 +741,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -488,6 +749,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
             
 
           </nav>
