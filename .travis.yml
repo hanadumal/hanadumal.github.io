@@ -1,0 +1,25 @@
+language: node_js
+node_js: stable
+
+branches:
+  only:
+    - hexo
+
+cache:
+  directories:
+    - node_modules
+
+install:
+  - npm install
+
+script:
+  - hexo g
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name 'hanadumal'
+  - git config user.email 'hanadumal@outlook.com'
+  - git add .
+  - git commit -m 'Update blog content by Travis CI'
+  - git push --force --quite "https://${gh_token}@github.com/hanadumal/hanadumal.github.io"  hexo:master
