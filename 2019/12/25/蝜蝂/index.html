@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.2.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.2.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.2.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="蝜蝂者，善负小虫也。行遇物，辄持取，卬其首负之。背愈重，虽困剧不止也。其背甚涩，物积因不散，卒踬仆不能起。人或怜之，为去其负。苟能行，又持取如故。又好上高，极其力不已，至坠地死。 –柳宗元《蝜蝂传》   信息太多等于没有信息。 –左耳朵耗子  生活在这样一个信息爆炸的时代，我们很容易陷入到知识恐慌中，我们担心世界进步太快，担心自己成长太慢，担心错误太多的美好。所以经常不自觉的会陷入到·蝜蝂者·困">
+<meta name="keywords" content="知识管理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="信息膨胀时代蝜蝂的断舍离">
+<meta property="og:url" content="http://hanadumal.com/2019/12/25/蝜蝂/index.html">
+<meta property="og:site_name" content="Hanadumal">
+<meta property="og:description" content="蝜蝂者，善负小虫也。行遇物，辄持取，卬其首负之。背愈重，虽困剧不止也。其背甚涩，物积因不散，卒踬仆不能起。人或怜之，为去其负。苟能行，又持取如故。又好上高，极其力不已，至坠地死。 –柳宗元《蝜蝂传》   信息太多等于没有信息。 –左耳朵耗子  生活在这样一个信息爆炸的时代，我们很容易陷入到知识恐慌中，我们担心世界进步太快，担心自己成长太慢，担心错误太多的美好。所以经常不自觉的会陷入到·蝜蝂者·困">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-12-24T17:00:59.049Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="信息膨胀时代蝜蝂的断舍离">
+<meta name="twitter:description" content="蝜蝂者，善负小虫也。行遇物，辄持取，卬其首负之。背愈重，虽困剧不止也。其背甚涩，物积因不散，卒踬仆不能起。人或怜之，为去其负。苟能行，又持取如故。又好上高，极其力不已，至坠地死。 –柳宗元《蝜蝂传》   信息太多等于没有信息。 –左耳朵耗子  生活在这样一个信息爆炸的时代，我们很容易陷入到知识恐慌中，我们担心世界进步太快，担心自己成长太慢，担心错误太多的美好。所以经常不自觉的会陷入到·蝜蝂者·困">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="http://hanadumal.com/2019/12/25/蝜蝂/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>信息膨胀时代蝜蝂的断舍离 | Hanadumal</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hanadumal</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://hanadumal.com/2019/12/25/蝜蝂/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wang Sheng">
+      <meta itemprop="description" content="The ideal is beauty, and sorrow is the nostalgia for beauty.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hanadumal">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">信息膨胀时代蝜蝂的断舍离
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-12-25 12:18:00 / Modified: 01:00:59" itemprop="dateCreated datePublished" datetime="2019-12-25T12:18:00+08:00">2019-12-25</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>蝜蝂者，善负小虫也。<br>行遇物，辄持取，卬其首负之。<br>背愈重，虽困剧不止也。<br>其背甚涩，物积因不散，卒踬仆不能起。<br>人或怜之，为去其负。<br>苟能行，又持取如故。<br>又好上高，极其力不已，至坠地死。 –柳宗元《蝜蝂传》</p>
+</blockquote>
+<blockquote>
+<p>信息太多等于没有信息。 –左耳朵耗子</p>
+</blockquote>
+<p>生活在这样一个信息爆炸的时代，我们很容易陷入到知识恐慌中，我们担心世界进步太快，担心自己成长太慢，担心错误太多的美好。所以经常不自觉的会陷入到·蝜蝂者·困境中，于是乎我们不断地买买买书，不断的听听听课，不断的熬夜失眠或学习或刷剧。经常听到在北京的人说，充足舒适的睡眠很奢侈；第二天继续自己的焦虑或者慌张，我们在陷入了困境中不能自拔，无法自救。即使有人帮助我们把负重拿走，或是自我觉醒决定断舍离了。用不了多久大抵还是会重蹈覆辙。</p>
+<p>So?到底是哪里出了问题？为什么我的知乎收藏夹越来越满？为什么我的浏览器的Bookmark文件夹越来越大？为什么我的稍后阅读成为了再也不读？为什么我在Kindle上看书的速度永远赶不上买书的速度？</p>
+<p>首先回答为什么会焦虑？</p>
+<ul>
+<li><p>此刻我已经快30岁了，刚刚开始职业生涯4年，如果程序员只能干到35，那离退休不远了。如果能干到50退休，那么还有20年的职业时间。</p>
+</li>
+<li><p>在这个行业里，身边的同事已经有96 97年生人了。学习速度比我快，加班能力比我强，要的钱比我少，我用什么去和他们竞争。假设我对物质条件要求不高，覆盖在北京的基础开销之上略微有结余即可，那么房贷的压力也是继续会要求我继续工作。</p>
+</li>
+<li><p>你作为高中的尖子生、985硕士毕业生，面对形形色色财务自由的人群，面对同龄人中家境优渥的选手，对比产生的嫉妒如何磨平？</p>
+</li>
+<li><p>对于已经失去了的选择的后悔</p>
+</li>
+<li><p>没有成就感的工作，会让你觉得在浪费自己宝贵的时间。越是长大越是发觉世间最宝贵的资源乃是人的时间。你甚至没有权利选择不把它花掉。过期不候强制消费。当你把时间用在无法获取成就感，无法获取乐趣的事情上面时。迷茫和痛苦倒闭你忧虑恐慌成为蝜蝂。</p>
+</li>
+</ul>
+<p>那么如何才能不恐慌？</p>
+<ul>
+<li><p>技术其实是很有趣的事情。真正的有机会受教育其实是在18岁以后，18岁以前接受的更像是灌输，而不是教育。细细想来在18岁的每年里你人生体验的密度是否足够大，对于你目前的焦虑和迷茫程度有很大的关联。18～28岁的10年时间里，浪费了到底多少时间，如果每天2小时，2 * 3650 = 7300小时，如果按照一万小时定律距离成为专家也不需要太久了。然而现实是你并没有在任何一个领域成为专家。你没有成为一个当下火热的短视频直播领域的大V；没有成为某个技术的专家；没有成为理财届的银行螺丝钉。纵观你们这一代人的群体，比你优秀的似乎总是那么多。1990年出生人口2200W，如果你刚好是前10%的位置，那么中国有200W人同龄人比你要强，更遑论88～91年都可以称之为你的同龄人，这样看来有800W同龄人都比你强大，资源比你更丰富。额外加之改革开放以来家庭财富快速积累的家庭中的二代。总之有比自己更强大，更有钱，更有趣的人很多很多。</p>
+</li>
+<li><p>希望你能在自己每周五天，远超40小时的工作时间里获得乐趣和成就感。目前在熟人手下干活，其实应该有更多的属于自己成长的时间，不想干的工作都可以分派给其他人，业务成果的好坏对自己来说并不是最重要的，在自己32岁的时候，成为某个开源项目的PMC，成为某个项目的专家才是目前最迫切的需求。</p>
+</li>
+<li><p>所谓的财务自由并不是真的不工作。</p>
+</li>
+</ul>
+<p>做哪些事在能让自己的信息，让自己的生活回到正轨？</p>
+<ul>
+<li><p>互联网上成PB的信息都可以提供出来，作为一个人不可能学习完，了解完所有的知识，要有筛选，要把信息转换成为知识，要进行信息的压缩，要构建知识的框架。要找到好的信息输入源头。</p>
+</li>
+<li><p>DRY原则，要进行抽象，把工作中遇到的情况，抽象成可复用的代码，不断积累自己可应对的业务场景。每日维护更新这个代码库，这是作为计算机软件工程师的立足的根基。</p>
+</li>
+<li><p>要说跟新人有什么不同。就是你在这浑浑噩噩的十年中，不断挣扎，不断尝试，不断自我怀疑得到的一些结论。找到的哪怕一点点的星光。</p>
+</li>
+<li><p>让自己成为一个对别人有吸引力的人。让自己成为一个健身大达人，拥有强壮的体魄，拥有清醒的精神状态。让自己能做的事情更多，让自己掌握工业界语言Java。让自己明年可以不用中文表达这些想法的碎片。</p>
+</li>
+</ul>
+<p>2019年年末絮絮叨叨的过</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/知识管理/" rel="tag"># 知识管理</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/11/30/Hello-Again/" rel="next" title="Hello Again">
+                <i class="fa fa-chevron-left"></i> Hello Again
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Wang Sheng</p>
+              <div class="site-description motion-element" itemprop="description">The ideal is beauty, and sorrow is the nostalgia for beauty.</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Wang Sheng</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.2.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.2.0"></script>
+
+  <script src="/js/motion.js?v=7.2.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.2.0"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.2.0"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.2.0"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
